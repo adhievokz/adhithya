@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ADHITHYANANDH N | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0d1117;
+    color:#ffffff;
+}
+
+header{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#0d1117,#161b22);
+    padding:20px;
+}
+
+.hero h1{
+    font-size:4rem;
+    color:#58a6ff;
+}
+
+.hero h2{
+    margin-top:10px;
+    font-weight:400;
+    color:#c9d1d9;
+}
+
+.hero p{
+    max-width:700px;
+    margin:20px auto;
+    color:#8b949e;
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 30px;
+    background:#58a6ff;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#1f6feb;
+    transform:translateY(-3px);
+}
+
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    color:#58a6ff;
+    margin-bottom:50px;
+}
+
+.about,
+.education,
+.contact{
+    background:#161b22;
+    border-radius:15px;
+    padding:40px;
+}
+
+.about p,
+.education p,
+.contact p{
+    color:#c9d1d9;
+    line-height:1.8;
+}
+
+.skills-container,
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.skill-card,
+.project-card{
+    background:#161b22;
+    padding:25px;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.skill-card:hover,
+.project-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px rgba(88,166,255,0.2);
+}
+
+.skill-card h3,
+.project-card h3{
+    color:#58a6ff;
+    margin-bottom:10px;
+}
+
+.contact a{
+    color:#58a6ff;
+    text-decoration:none;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#010409;
+    color:#8b949e;
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(13,17,23,0.95);
+    padding:15px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+nav .logo{
+    font-size:1.4rem;
+    font-weight:600;
+    color:#58a6ff;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#58a6ff;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        margin-top:10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Portfolio</div>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<header>
+    <div class="hero">
+        <h1>ADHITHYANANDH N</h1>
+        <h2>B.Tech AI & Data Science Student</h2>
+
+        <p>
+            Passionate AI & Data Science student with strong interest in
+            Artificial Intelligence, Data Analytics, Power BI, and Real-Time
+            Object Detection Systems. Dedicated to building innovative
+            solutions using modern technologies and continuously improving
+            technical expertise.
+        </p>
+
+        <a href="#contact" class="btn">Contact Me</a>
+    </div>
+</header>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about">
+        <p>
+            I am ADHITHYANANDH N, currently pursuing B.Tech in Artificial
+            Intelligence and Data Science. I enjoy working on AI-powered
+            applications, data analytics projects, and solving real-world
+            problems using technology. My goal is to become a skilled AI
+            Engineer and contribute to innovative advancements in the field
+            of Artificial Intelligence.
+        </p>
+    </div>
+</section>
+
+<section id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="education">
+        <h3>JCT College of Engineering and Technology</h3>
+        <p><strong>Degree:</strong> B.Tech Artificial Intelligence & Data Science</p>
+        <p><strong>Duration:</strong> 2023 - 2027</p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <h3>Artificial Intelligence</h3>
+            <p>Machine Learning, AI Tools, Deep Learning Basics</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Data Analytics</h3>
+            <p>Data Visualization, Data Processing, Insights Generation</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Power BI</h3>
+            <p>Dashboard Creation, Reports & Business Analytics</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Programming</h3>
+            <p>Python, Problem Solving & Software Development</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project-container">
+
+        <div class="project-card">
+            <h3>AI Tools Integration</h3>
+            <p>
+                Explored and implemented various AI tools for productivity,
+                automation, and intelligent data processing.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Real-Time Object Detection System</h3>
+            <p>
+                Developed a real-time object detection solution using computer
+                vision techniques for identifying and tracking objects.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact">
+        <p><strong>Email:</strong> <a href="mailto:adhievokz@gmail.com">adhievokz@gmail.com</a></p>
+
+        <p><strong>Phone:</strong> 7510128239</p>
+
+        <p>
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/adhithya-nandh-2912513a8" target="_blank">
+                View Profile
+            </a>
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 ADHITHYANANDH N | AI & Data Science Portfolio</p>
+</footer>
+
+</body>
+</html>
